@@ -9,3 +9,17 @@
 .Poor {
   fill: #999999;
 }
+
+.Performance:hover {
+  stroke: #000000;
+  stroke-width: 1.5px;
+  cursor: pointer;
+}
+
+.Performance:hover + g .Tooltip {
+  opacity: 1;
+}
+
+.Performance:hover + g text {
+  opacity: 1;
+}

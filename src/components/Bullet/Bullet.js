@@ -48,13 +48,12 @@ class Bullet extends Component {
         <svg className="BulletGraph" id={ `BulletGraph_${ this.props.id }` } width="960" height="60">
           <g className="Graph" transform="translate(120, 5)">
 
-            <Performance type="Good" width="800" />
-            <Performance type="Satisfactory" width={ satisfactoryWidth } />
-            <Performance type="Poor" width={ poorWidth } />
-
-
-
             { markers }
+            
+            <Performance { ...this.props } perfValue={ this.props.rangeEnd } type="Good" width="800" />
+            <Performance { ...this.props } perfValue={ this.props.satisfactoryEnd } type="Satisfactory" width={ satisfactoryWidth } />
+            <Performance { ...this.props } perfValue={ this.props.poorEnd } type="Poor" width={ poorWidth } />
+
             <Value { ...this.props } width={ valueWidth } />
             <Comparator { ...this.props } xCoord={ comparatorCoord } />
 
