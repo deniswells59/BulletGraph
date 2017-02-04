@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Marker from './Marker.js';
-import Performance from './Performance.js';
-import Value from './Value.js';
-import Comparator from './Comparator.js';
-import Title from './Title.js';
+import Marker from '../Marker/Marker.js';
+import Performance from '../Performance/Performance.js';
+import Value from '../Value/Value.js';
+import Comparator from '../Comparator/Comparator.js';
+import Title from '../Title/Title.js';
 
-import '../style/Bullet.css';
+import './Bullet.css';
 
 class Bullet extends Component {
   constructor(props) {

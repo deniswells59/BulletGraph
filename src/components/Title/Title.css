@@ -1,0 +1,13 @@
+.TitleWrapper {
+  text-anchor: end;
+}
+
+.Title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Subtitle {
+  font-size: .6em;
+  opacity: .6;
+}

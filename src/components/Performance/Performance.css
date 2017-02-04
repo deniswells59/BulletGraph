@@ -1,0 +1,11 @@
+.Good {
+  fill: #ddd;
+}
+
+.Satisfactory {
+  fill: #bbb;
+}
+
+.Poor {
+  fill: #999999;
+}

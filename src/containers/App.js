@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
-import Bullet from '../components/Bullet';
-import '../style/App.css';
+import Bullet from '../components/Bullet/Bullet';
+
+import '../style/index.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: this.getData()
+    }
+  }
+
+  getData() {
+    return [{ title: "revenue" }]
+  }
+
   render() {
     return (
       <div className="App">
