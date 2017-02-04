@@ -6,6 +6,8 @@ class Performance extends Component {
     return (
       <rect
         className={ this.props.type }
+        rx="2"
+        ry="2"
         width={ this.props.width }
         height="25">
       </rect>

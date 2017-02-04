@@ -1,0 +1,12 @@
+.Value:hover {
+  stroke: #FFFFFF;
+  cursor: pointer;
+}
+
+.Value:hover + g .Tooltip {
+  opacity: 1;
+}
+
+.Value:hover + g text {
+  opacity: 1;
+}

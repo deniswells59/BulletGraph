@@ -10,7 +10,6 @@ import './Bullet.css';
 class Bullet extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       graphWidth: 798.5,
     }
@@ -46,18 +45,18 @@ class Bullet extends Component {
 
     return (
       <div className="BulletWrapper">
-        <svg className="BulletGraph" width="960" height="60">
+        <svg className="BulletGraph" id={ `BulletGraph_${ this.props.id }` } width="960" height="60">
           <g className="Graph" transform="translate(120, 5)">
 
             <Performance type="Good" width="800" />
             <Performance type="Satisfactory" width={ satisfactoryWidth } />
             <Performance type="Poor" width={ poorWidth } />
 
-            <Value width={ valueWidth } />
 
-            <Comparator xCoord={ comparatorCoord } />
 
             { markers }
+            <Value { ...this.props } width={ valueWidth } />
+            <Comparator { ...this.props } xCoord={ comparatorCoord } />
 
             <Title { ...this.props }/>
           </g>

@@ -1,4 +1,25 @@
 .Line {
   stroke: #000;
   stroke-width: 3px;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+line.Comparator {
+  stroke-width: 6px;
+}
+
+.Comparator:hover {
+  stroke: #FFFFFF;
+  cursor: pointer;
+}
+
+.Comparator:hover + g .Tooltip {
+  opacity: 1;
+}
+
+.Comparator:hover + g text {
+  opacity: 1;
 }
