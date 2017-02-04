@@ -1,0 +1,38 @@
+.Good {
+  fill: #ddd;
+}
+
+.Satisfactory {
+  fill: #bbb;
+}
+
+.Poor {
+  fill: #999999;
+}
+
+.Line {
+  stroke: #000;
+  stroke-width: 3px;
+}
+
+.Marker {
+  opacity: .8;
+}
+
+.TitleWrapper {
+  text-anchor: end;
+}
+
+.Title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.Subtitle {
+  font-size: .6em;
+  opacity: .6;
+}
+
+.BulletWrapper {
+  text-align: center;
+}
